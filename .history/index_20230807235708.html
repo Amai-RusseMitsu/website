@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Russell Yang Academic Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" type="text/css" href="css/style1.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-32"><b>Russell Q.X.<br><u>YANG</u></b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#Research" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Research</a> 
+    <a href="#Publications" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Publications</a> 
+    <a href="#Talks" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Talks</a> 
+    <a href="#Curriculum Vitae" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Curriculum Vitae</a>
+    <!-- <a href="#About Me" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Me</a>  -->
+    <a href="bookclub/bookclub.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Book Club</a> 
+  </div>
+  <div class='w3-row-padding1'>
+    <span style="font-size: 2.3rem;">
+    <a href="https://www.linkedin.com/in/russell-yang1/" target="_blank"><i  class="fab fa-linkedin-in"></i></a>
+    <a href="https://www.researchgate.net/profile/Russell-Yang-2" target="_blank"><i  class="fab fa-researchgate"></i></a>
+    <a href="https://scholar.google.com/citations?user=pp5vORAAAAAJ&hl=en" target="_blank"><i  class="ai ai-google-scholar-square"></i></a>
+    <a href="https://www.facebook.com/russell.yang.12/" target="_blank"><i  class="fab fa-facebook-square"></i></a>
+    <a href="https://www.instagram.com/russellforever_yang/" target="_blank"><i  class="fab fa-instagram"></i></a>
+  </div>
+  <!-- <div class="w3-bar-block">
+    <a href="bookclub/bookclub.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Book Club</a>  -->
+
+<br></span>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+</header>
+<div class="header">
+    <img src="images/header.png" style="width:100%; height: auto" onclick="onClick(this)" alt="Matriculation!">
+</div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  
+  <!-- Photo grid 
+  <div class="row">
+    <div class="column">
+        <img src="cover.png" style="height:200px" onclick="onClick(this)" alt="Matriculation!">
+    </div>
+    <div class="column">
+        <img src="isef.png" style="height:200px" onclick="onClick(this)" alt="Me at ISEF 2018!">
+    </div>
+    <div class="column">
+        <img src="talk.png" style="height:200px" onclick="onClick(this)" alt="Presenting on Topological Circuits in Stockholm!">
+    </div>
+  </div>-->
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Research -->
+  <div class="w3-container" id="Research" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Research</b></h1>
+    <hr style="width:50px;border:5px solid #174A9C" class="w3-round">
+    <p>My main area of research is in theoretical condensed matter physics. 
+        I specialise in non-Hermitian systems and understanding their behaviour. Hermitian systems have dominated quantum mechanics for the last 100 years but non-hermiticity has opened a vast new territory that harbours new applications in cold atom physics, lasing, sensing and photonics. New and exciting physics such as the non-Hermitian Skin Effect, criticality and universality have emerged. This is coupled together with a broader interest in topological condensed matter systems. 
+    </p>
+    <p>
+        I am also working on various projects in a diversified range of fields within physics:
+        <ol>
+          <li>Quantum simulation of time-crystal on quantum computers. Composing of both an experimental realisation of time-crystal signatures and a theoretical investigation into the robustness of time-crystals such that they can be recreated in more physically tangible systems.</li>
+          <li>The study of percolating quantum systems and their properties. Percolation theory is a classic problem in statistical physics that has applications in material science, network theory and understanding phase transitions. Percolation has yet to be applied to a quantum problem and we do this in the hopes of discovering novel physics.</li>
+        </ol>
+    </p>
+  </div>
+  
+  <!-- Publications -->
+  <div class="w3-container" id="Publications" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Publications</b></h1>
+    <hr style="width:50px;border:5px solid #174A9C" class="w3-round">
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <div class="w3-container">
+          <h3>Designing nonhermitian real spectra through electrostatics (2022) </h3>
+          <a class="w3-blue" href="https://www.sciencedirect.com/science/article/abs/pii/S2095927322003504" target="_blank">Science Bulletin</a>
+          <p>Non-Hermiticity presents a vast newly opened territory that harbors new physics and applications such as lasing and sensing. However, only non-Hermitian systems with real eigenenergies are
+            stable, and great efforts have been devoted in designing them through enforcing parity-time (PT)
+            symmetry. In this work, we exploit a lesser-known dynamical mechanism for enforcing real-spectra,
+            and develop a comprehensive and versatile approach for designing new classes of parent Hamiltonians with real spectra. Our design approach is based on a novel electrostatics analogy for modified
+            non-Hermitian bulk-boundary correspondence, where electrostatic charge corresponds to density of
+            states and electric fields correspond to complex spectral flow. As such, Hamiltonians of any desired spectra and state localization profile can be reverse-engineered, particularly those without any
+            guiding symmetry principles. By recasting the diagonalization of non-Hermitian Hamiltonians as a
+            Poisson boundary value problem, our electrostatics analogy also transcends the gain/loss-induced
+            compounding of floating-point errors in traditional numerical methods, thereby allowing access to
+            far larger system sizes.
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <div class="w3-container">
+          <h3>Topological Circuits - A Stepping Stone in the Topological Revolution (2019)</h3>
+          <a class="w3-blue" href="https://www.worldscientific.com/doi/abs/10.1142/S2529732520970020" target="_blank">Molecular Frontiers Journal</a>
+          <p>Kirchhoff’s Laws are reformulated so that circuits can be analysed using the powerful tool of topology. This sheds light on the properties of exotic real materials such as graphene. The quantum edge effect in a polyacetylene chain happens only when the edge of the chain is conducting. This was recreated experimentally using electrical circuits. Physical laws govern the properties of the bulk in a material to that of the edge. However, dissipation introduced into circuits using voltage controlled current sources was shown to have broken these laws. Results are attributed to boundary conditions affecting all states in the bulk, not just edge states, implying a new state of matter. Studying Condensed matter systems using electrical circuits gives physicists an accessible, scalable and inexpensive way to study real materials.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Talks -->
+    <div class="w3-container" id="Talks" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>Talks</b></h1>
+        <hr style="width:50px;border:5px solid #174A9C" class="w3-round">
+        <div class="row">
+            <div class="column">
+                <iframe width="498" height="280" src="https://www.youtube.com/embed/PHYByN87REY?start=729" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="column">
+                <iframe width="498" height="280" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FStockholmInternationalYouthScienceSeminar%2Fvideos%2F200115457604443%2F&show_text=false&width=560&t=7159" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+           </div>
+  <!--           <div class="column">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cucZ94RRHAk?start=1473" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>-->
+          </div>
+      </div>
+      
+      <!-- Curriculum Vitae-->
+  <div class="w3-container" id="Curriculum Vitae" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Curriculum Vitae</b></h1>
+    <hr style="width:50px;border:5px solid #174A9Ced" class="w3-round">
+    <p>For my full CV</p>
+    <a href="https://drive.google.com/file/d/1dOJOdK9VgXsVEym1yu6CIhmMTO7O8rVl/view?usp=sharing" target="_blank"> Click here</a> 
+  </div>
+  
+  
+  <!-- Header -->
+  <!-- <div class="w3-container" style="margin-top:80px" id="About Me">
+    <h1 class="w3-xxxlarge w3-text-red"><b>About Me</b></h1>
+    <hr style="width:50px;border:5px solid #174A9C" class="w3-round">
+    <p>
+        I was born in the year 2000 (calculating my age is easy!) and grew up in Singapore. I went to NUS High school, the premier science and math institute in Singapore. 
+        When I was 15, I signed up for a physics research competition and fell in love with both doing and communicating physics to the masses. 
+    </p>
+        When I'm not thinking about physics, I enjoy taking photos, walking outdoors, cooking and searching for great food around the world. 
+    <p>
+        
+    </p>
+  </div> -->
+
+  <!-- Curriculum Vitae-->
+  <div class="w3-container" id="Book Club" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Book Club</b></h1>
+    <hr style="width:50px;border:5px solid #174A9Ced" class="w3-round">
+    <p>I travel 1h 30 min every day amounting to more than 10 hours every week. That's enough to complete a book a week! So here's my book blog to keep myself accountable and share my book recommendations to my friends.</p>
+    <a href="bookclub/bookclub.html" target="_blank"> Click here</a> 
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Copyright &copy; 2023 Russell Q.X. Yang</p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer>
+</script>
+
+</body>
+</html>
